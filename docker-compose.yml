@@ -17,6 +17,6 @@ services:
 
 networks:
   backend:
-    name: qrcode_network
+    name: nestapp_network
     driver: bridge
 
