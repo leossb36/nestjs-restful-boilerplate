@@ -1,0 +1,22 @@
+services:
+  app:
+    container_name: nestjs-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT}:${PORT}"
+    environment:
+      NODE_ENV: production
+    restart: always
+    networks:
+      - backend
+    env_file:
+      - .env
+
+
+networks:
+  backend:
+    name: qrcode_network
+    driver: bridge
+

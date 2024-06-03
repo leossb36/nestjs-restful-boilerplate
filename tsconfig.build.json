@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "exclude": [
+    "**/*.test.*",
+    "**/__mocks__/*",
+    "**/__tests__/*",
+    "./dist/**/*",
+    "**/*.entity.ts",
+    "**/*.interceptor.ts",
+    "**/*.guard.ts",
+    "**/*.decorator.ts",
+    "**/*.config.ts",
+    "**/*.helper.ts"
+  ]
+}
